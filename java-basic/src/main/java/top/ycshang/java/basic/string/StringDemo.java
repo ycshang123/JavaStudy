@@ -1,4 +1,4 @@
-package top.ycshang.java.basic.day1;
+package top.ycshang.java.basic.string;
 
 import java.util.Scanner;
 

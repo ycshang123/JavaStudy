@@ -1,4 +1,4 @@
-package top.ycshang.java.basic.day1;
+package top.ycshang.java.basic.sort;
 
 /**
  * @program: java-basic
@@ -24,7 +24,6 @@ public class BubbleSort {
             }
         }
     }
-
     public static void main(String[] args) {
         int[] arr = {1, 10, 29, 3, 4, 9, 98, 30};
         BubbleSort.bubbleSort(arr, arr.length);
