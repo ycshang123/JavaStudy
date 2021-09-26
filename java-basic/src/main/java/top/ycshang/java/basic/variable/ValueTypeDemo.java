@@ -73,27 +73,27 @@ public class ValueTypeDemo {
         log.info("10/3={}", (10 / 3));
     }
 
-    public static void  demo8(){
+    public static void demo8() {
         //定义字符串变量
-        String str ="Super Man";
-        int x =80;
+        String str = "Super Man";
+        int x = 80;
         //修改str的内容并将内容重新给str变量
-        str = str+x;
-        log.info("str={}",str);
+        str = str + x;
+        log.info("str={}", str);
     }
 
-    public static void demo9(){
+    public static void demo9() {
         //定义整型变量
-        int  i=1;
-        log.info("i+2={}",i+2);
+        int i = 1;
+        log.info("i+2={}", i + 2);
         //定义整型变量
-        int j=2;
-        log.info("j+2={}",j+2);
+        int j = 2;
+        log.info("j+2={}", j + 2);
     }
 
-    public static void main(String[] args) throws  Exception{
-        for(int i=1;i<10;i++){
-            Method method = ValueTypeDemo.class.getMethod("demo"+i);
+    public static void main(String[] args) throws Exception {
+        for (int i = 1; i < 10; i++) {
+            Method method = ValueTypeDemo.class.getMethod("demo" + i);
             method.invoke(null);
         }
 
