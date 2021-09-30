@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--垂直布局容器，元素之间间距为20，对齐方式底部居右-->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+<VBox fx:id="rootPane"
+      xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      spacing="20" alignment="BOTTOM_RIGHT"
+      fx:controller="top.ycshang.java.jfx.ctrl.MainCtrl">
+    <!--内边距-->
+    <padding>
+        <Insets bottom="20" right="40"/>
+    </padding>
+
+    <!--    <ImageView fitWidth="60" fitHeight="60">-->
+    <!--        <Image url="https://raw.githubusercontent.com/ycshang123/image-hosting/master/date.6qaqtvxxxa00.png"/>-->
+    <!--    </ImageView>-->
+
+
+    <!--ImageView容器指定大小，内部图片适应其大小-->
+    <ImageView fitWidth="110" fitHeight="100">
+        <Image url="https://raw.githubusercontent.com/ycshang123/image-hosting/master/date.6qaqtvxxxa00.png"/>
+    </ImageView>
+    <Button onAction="#showDatePicker" fx:id="dateBtn" text="日期" styleClass="btn"/>
+    <!--label使用main.css中的样式-->
+    <!--    <Label text="JavaFx 11 + JDK 11" styleClass="title"/>-->
+    <!--button使用main.css中的样式，如果用style=""的形式，就是内联样式-->
+    <!--    <Button fx:id="btnAlert" text="提示框" onAction="#showDatePicker" styleClass="btn"/>-->
+</VBox>
