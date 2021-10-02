@@ -9,6 +9,9 @@
     -fx-font-size: 30;
     -fx-text-fill: #8668a4;
 }
+.borderImg{
+    -fx-border-radius: 50;
+}
 
 .btn {
     -fx-min-width: 100;

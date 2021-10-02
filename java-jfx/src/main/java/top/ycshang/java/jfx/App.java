@@ -19,24 +19,24 @@ import java.util.Objects;
  **/
 public class App extends Application {
 
+    public static void main(String[] args) {
+        AppConfig.init();
+        launch();
+    }
+
     @Override
     public void start(Stage stage) throws IOException {
         // 加载并创建主场景
-        Parent root = FXMLLoader.load(Objects.requireNonNull(App.class.getResource("fxml/main.fxml")));
+        //Parent root = FXMLLoader.load(Objects.requireNonNull(App.class.getResource("fxml/main.fxml")));
         // 加载外部样式，这样窗口中所有组件可用，绑定在fxml组件上的样式只能本组件可用
-        root.getStylesheets().add(Objects.requireNonNull(App.class.getResource("css/main.css")).toExternalForm());
+        //root.getStylesheets().add(Objects.requireNonNull(App.class.getResource("css/main.css")).toExternalForm());
+        Parent root = FXMLLoader.load(Objects.requireNonNull(App.class.getResource("fxml/panel.fxml")));
         Scene scene = new Scene(root, AppConfig.stageWidth, AppConfig.stageHeight);
         // 设置窗口信息
         stage.setTitle(AppConfig.title);
         stage.setResizable(AppConfig.stageResizable);
         stage.getIcons().add(new Image(Objects.requireNonNull(App.class.getResourceAsStream(AppConfig.icon))));
-
         stage.setScene(scene);
         stage.show();
-    }
-
-    public static void main(String[] args) {
-        AppConfig.init();
-        launch();
     }
 }
