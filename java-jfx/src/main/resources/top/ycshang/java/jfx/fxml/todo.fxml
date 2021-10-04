@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0"
+            prefWidth="800.0" xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="top.ycshang.java.jfx.ctrl.ToDoCtrl">
+    <!--头部导航-->
+    <top>
+        <VBox>
+            <!--标题栏-->
+            <HBox alignment="CENTER_LEFT" onMouseDragged="#onDragged" onMousePressed="#onPressed" prefHeight="20.0"
+                  spacing="20" styleClass="top_bar">
+                <padding>
+                    <Insets left="20" right="20"/>
+                </padding>
+                <Label styleClass="logo"/>
+                <Label styleClass="title" text="盏茶作酒"/>
+                <Pane HBox.hgrow="ALWAYS"/>
+                <Label onMouseClicked="#onMinClicked" styleClass="min"/>
+                <Label onMouseClicked="#onCloseClicked" styleClass="close"/>
+            </HBox>
+
+            <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0" spacing="20.0" styleClass="top"
+                  BorderPane.alignment="CENTER">
+                <BorderPane.margin>
+                    <Insets/>
+                </BorderPane.margin>
+                <padding>
+                    <Insets left="20.0" right="20.0"/>
+                </padding>
+                <children>
+                    <Pane prefHeight="100.0" prefWidth="746.0"/>
+                    <ImageView fitHeight="26.0" fitWidth="26.0" styleClass="link">
+                        <image>
+                            <Image url="@../icon/time.png"/>
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="26.0" fitWidth="26.0" styleClass="link">
+                        <image>
+                            <Image url="@../icon/add .png"/>
+                        </image>
+                    </ImageView>
+                    <ImageView fitHeight="26.0" fitWidth="26.0" styleClass="link">
+                        <image>
+                            <Image url="@../icon/more.png"/>
+                        </image>
+                    </ImageView>
+                </children>
+            </HBox>
+        </VBox>
+    </top>
+    <!--底部导航栏-->
+    <bottom>
+        <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="45.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets left="80.0" right="80.0"/>
+            </padding>
+
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="120.0" spacing="8.0"
+                  onMouseClicked="#showFirstPane"
+            >
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+
+                <ImageView fitHeight="26.0" fitWidth="26.0">
+                    <image>
+                        <Image url="@../icon/todo.png"/>
+                    </image>
+                </ImageView>
+                <Label prefHeight="15.0" prefWidth="80.0" styleClass="bar_title" text="待办"/>
+
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="140.0" spacing="8.0"
+                  onMouseClicked="#showSecondPane">
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+
+                <ImageView fitHeight="24.0" fitWidth="24.0">
+                    <image>
+                        <Image url="@../icon/todo_list.png"/>
+                    </image>
+                </ImageView>
+                <Label prefHeight="15.0" prefWidth="80.0" styleClass="bar_title" text="待办集"/>
+
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="140.0" spacing="8.0"
+                  onMouseClicked="#showThirdPane">
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+                <ImageView fitHeight="24.0" fitWidth="24.0">
+                    <image>
+                        <Image url="@../icon/collection.png"/>
+                    </image>
+                </ImageView>
+                <Label prefHeight="15.0" prefWidth="80.0" styleClass="bar_title" text="数据统计"/>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="95.0" spacing="8.0">
+                <padding>
+                    <Insets left="10.0" right="10.0"/>
+                </padding>
+
+                <ImageView fitHeight="24.0" fitWidth="24.0">
+                    <image>
+                        <Image url="@../icon/my.png"/>
+                    </image>
+                </ImageView>
+                <Label prefHeight="15.0" prefWidth="80.0" styleClass="bar_title" text="我的"/>
+
+            </HBox>
+
+        </HBox>
+    </bottom>
+    <center>
+        <StackPane prefHeight="-Infinity" prefWidth="-Infinity" BorderPane.alignment="TOP_CENTER">
+            <GridPane hgap="20" vgap="20" fx:id="firstPane" alignment="CENTER">
+                <fx:include source="todocard.fxml" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <fx:include source="todocard.fxml" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <fx:include source="todocard.fxml" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <fx:include source="todocard.fxml" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            </GridPane>
+            <VBox fx:id="secondPane" visible="false" alignment="CENTER">
+                <HBox prefWidth="60" prefHeight="60" alignment="CENTER">
+                    <ImageView fitHeight="36.0" fitWidth="36.0">
+                        <Image url="@../img/kongkong.png"></Image>
+                    </ImageView>
+                </HBox>
+                <HBox prefWidth="400" prefHeight="40" alignment="CENTER">
+                    <Label styleClass="small_gray_size">当前没有待办集，点击+新建一个吧</Label>
+                </HBox>
+                <HBox prefWidth="400" prefHeight="40" alignment="CENTER">
+                    <Label styleClass="small_gray_size">待办集是指待办的集合，比如您可以建立一个待办集名为"学习"，然后将"学习英语"，"学习物理"等待办加入</Label>
+                </HBox>
+            </VBox>
+            <VBox fx:id="thirdPane" visible="false" alignment="CENTER" spacing="12"
+                  style="-fx-background-color: #e1f5fe">
+                <fx:include source="showcard.fxml"/>
+                <fx:include source="showcard.fxml"/>
+                <fx:include source="showbottom.fxml"/>
+            </VBox>
+
+        </StackPane>
+    </center>
+</BorderPane>

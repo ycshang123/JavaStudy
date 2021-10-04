@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="top.ycshang.java.jfx.ctrl.MusicCtrl"
+            prefHeight="160.0" prefWidth="120.0"
+            style="-fx-background-color: #E3C3D9;">
+</AnchorPane>

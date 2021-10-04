@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox prefHeight="120.0" prefWidth="720.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="top.ycshang.java.jfx.ctrl.ToDoCtrl"
+      style="-fx-background-color: #ffffff;-fx-border-color: #ffffff;-fx-border-radius: 12px">
+    <children>
+        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="720.0">
+            <padding>
+                <Insets left="12.0" top="3.0"/>
+            </padding>
+            <children>
+                <Label text="累计专注" styleClass="small_blue_size"/>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" spacing="80.0">
+            <padding>
+                <Insets left="160.0" right="160.0"/>
+            </padding>
+            <children>
+                <VBox alignment="CENTER" prefHeight="61.0" prefWidth="120.0" spacing="12.0">
+                    <children>
+                        <Label text="次数" styleClass="small_blue_size"/>
+                        <Label text="0" styleClass="middle_blue_size"/>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="61.0" prefWidth="120.0" spacing="12.0">
+                    <children>
+                        <Label text="时长" styleClass="small_blue_size"/>
+                        <Label text="0" styleClass="middle_blue_size"/>
+                    </children>
+                </VBox>
+                <VBox alignment="CENTER" prefHeight="61.0" prefWidth="120.0" spacing="12.0">
+                    <children>
+                        <Label text="日均分钟" styleClass="small_blue_size"/>
+                        <Label text="0" styleClass="middle_blue_size"/>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </children>
+</VBox>

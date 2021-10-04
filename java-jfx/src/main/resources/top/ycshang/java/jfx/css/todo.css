@@ -1,0 +1,169 @@
+.root {
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.fistCard {
+    -fx-image: url(../icon/todo.png);
+}
+
+.fistCard:pressed {
+    -fx-image: url(../icon/todo_1.png);
+}
+
+
+.bg {
+    -fx-border-width: 0;
+    -fx-background-image: url(../img/bg.jpg);
+    -fx-background-size: cover;
+}
+
+.card_bg {
+    -fx-border-width: 0;
+    -fx-background-image: url(../img/bg_card.jpg);
+    -fx-background-size: cover;
+
+}
+
+.card_bg:hover {
+    -fx-opacity: 0.7;
+}
+
+.middle_font {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18;
+    -fx-font-weight: 400;
+}
+
+.small_size {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 14;
+    -fx-font-weight: 400;
+}
+
+
+.small_gray_size {
+    -fx-text-fill: #b0bec5;
+    -fx-font-size: 14;
+    -fx-font-weight: 400;
+}
+
+.small_blue_size {
+    -fx-text-fill: #4fc3f7;
+    -fx-font-size: 14;
+    -fx-font-weight: 400;
+}
+
+.middle_blue_size {
+    -fx-text-fill: #4fc3f7;
+    -fx-font-size: 20;
+    -fx-font-weight: 400;
+}
+
+.bar_title {
+    -fx-text-fill: #bdbdbd;
+    -fx-font-size: 14;
+}
+
+.top_bar {
+    -fx-background-color: #4fc3f7;
+    -fx-opacity: 0.8;
+}
+
+.top {
+    -fx-background-color: linear-gradient(to bottom, #4fc3f7, #e1f5fe);
+    -fx-opacity: 0.8;
+}
+
+.logo {
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+    -fx-background-radius: 10px;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 30px 30px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../icon/logo.png");
+    -fx-border-width: 0;
+}
+
+.title {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 16;
+}
+
+.close {
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 35px 30px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../icon/close_0.png");
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.close:hover {
+    -fx-background-color: #B588AE;
+    -fx-background-image: url("../icon/close_1.png");
+    -fx-border-width: 0;
+}
+
+.min {
+    -fx-min-height: 30;
+    -fx-min-width: 30;
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: 35px 30px;
+    -fx-background-color: transparent;
+    -fx-background-image: url("../icon/min_0.png");
+    -fx-cursor: hand;
+    -fx-border-width: 0;
+}
+
+.min:hover {
+    -fx-background-color: #B588AE;
+    -fx-background-image: url("../icon/min_1.png");
+    -fx-border-width: 0;
+}
+
+.container {
+    -fx-background-color: #000;
+    -fx-opacity: 0.2;
+}
+
+.btn {
+    -fx-min-width: 100;
+    -fx-min-height: 40;
+    -fx-background-color: #e8eaf6;
+    -fx-text-fill: #b39ddb;
+    -fx-font-size: 16;
+    -fx-cursor: hand;
+}
+
+.btn:hover {
+    -fx-background-color: #f6f6f6;
+    -fx-text-fill: #7B5E8C;
+    -fx-cursor: hand;
+}
+
+
+.card {
+    -fx-background-color: linear-gradient(to bottom, #CD9ABF, #7B5E8C);
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-cursor: hand;
+}
+
+.card:hover {
+    -fx-opacity: 0.7;
+}
+
+.link {
+    -fx-cursor: hand;
+}
+
+.link:hover {
+    -fx-opacity: 0.7;
+}

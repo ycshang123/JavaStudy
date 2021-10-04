@@ -2,6 +2,11 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://nexus.devops.zhizukj.com/repository/maven-public/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="snapshots" />
       <option name="name" value="snapshots" />
       <option name="url" value="http://106.14.169.149:8003/repository/maven-public/" />

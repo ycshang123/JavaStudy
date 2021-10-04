@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="top.ycshang.java.jfx.ctrl.MusicCtrl"
+            prefHeight="200.0" prefWidth="160.0"
+            styleClass="card">
+    <ImageView fitHeight="70" fitWidth="70" layoutY="-35" layoutX="45">
+        <Image url="@../icon/music.png"/>
+
+    </ImageView>
+    <Label text="卡片" layoutX="60" layoutY="80" styleClass="title"/>
+
+
+</AnchorPane>
