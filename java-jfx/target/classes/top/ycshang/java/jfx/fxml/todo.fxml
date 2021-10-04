@@ -61,7 +61,6 @@
 
             <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="120.0" spacing="8.0"
                   onMouseClicked="#showFirstPane"
-                  styleClass="fistCard"
             >
                 <padding>
                     <Insets left="10.0" right="10.0"/>
