@@ -10,5 +10,6 @@ module java.jfx {
     exports top.ycshang.java.jfx;
     exports top.ycshang.java.jfx.layout;
     opens top.ycshang.java.jfx.layout to javafx.fxml;
-
+    exports top.ycshang.java.jfx.basic;
+    opens top.ycshang.java.jfx.basic to javafx.fxml;
 }
