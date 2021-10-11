@@ -4,24 +4,28 @@ import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import top.ycshang.address.config.AppConfig;
 import top.ycshang.address.model.Person;
+import top.ycshang.address.view.BirthdayStatisticsController;
 import top.ycshang.address.view.PersonController;
 import top.ycshang.address.view.PersonEditController;
+import top.ycshang.address.view.RootController;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.Objects;
 
 public class MainApp extends Application {
 
     private final ObservableList<Person> personData = FXCollections.observableArrayList();
 
-    private Stage stage;
+    private Stage primaryStage;
 
     private BorderPane rootLayout;
 
@@ -53,25 +57,33 @@ public class MainApp extends Application {
     }
 
     public Stage getStage() {
-        return stage;
+        return this.primaryStage;
     }
 
     @Override
-    public void start(Stage stage) throws IOException {
-        this.stage = stage;
-        stage.setTitle("AddressBook");
+    public void start(Stage primaryStage) throws IOException {
+        this.primaryStage = primaryStage;
+        this.primaryStage.getIcons().add(new Image(Objects.requireNonNull(MainApp.class.getResourceAsStream(AppConfig.icon))));
+        primaryStage.setTitle(AppConfig.title);
         initRootLayout();
         showPerson();
     }
 
     public void initRootLayout() {
         try {
+            //加载根布局
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(MainApp.class.getResource("view/root-layout.fxml"));
             rootLayout = fxmlLoader.load();
-            Scene scene = new Scene(rootLayout, 820, 540);
-            stage.setScene(scene);
-            stage.show();
+            RootController rootController = fxmlLoader.getController();
+            rootController.setMainApp(this);
+            //创建以根布局为内容的场景
+            Scene scene = new Scene(rootLayout, AppConfig.stageWidth, AppConfig.stageHeight);
+            scene.getStylesheets().add(Objects.requireNonNull(MainApp.class.getResource("css/style.css")).toExternalForm());
+            //主窗体加入根布局
+            primaryStage.setScene(scene);
+            primaryStage.setResizable(AppConfig.stageResizable);
+            primaryStage.show();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -79,34 +91,38 @@ public class MainApp extends Application {
 
     public void showPerson() {
         try {
+            //加载人员显示面板
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(MainApp.class.getResource("view/person.fxml"));
             AnchorPane anchorPane = fxmlLoader.load();
+            //根布局中间部分加入人员显示面板
             rootLayout.setCenter(anchorPane);
+            //获得PersonController控制器
             PersonController personController = fxmlLoader.getController();
+            //向控制器传参
             personController.setMainApp(this);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void showNewPersonStage() {
+    public void showEditPerson(Person person, String type) {
         try {
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(MainApp.class.getResource("view/person-edit.fxml"));
-            AnchorPane anchorPane = loader.load();
-            Stage editStage = new Stage();
-            editStage.setTitle("Edit Person");
-            Parent root;
-            Scene scene = new Scene(anchorPane, 640, 480);
-            editStage.setScene(scene);
-            PersonEditController controller = loader.getController();
-            controller.setEditStage(editStage);
-            controller.setMainApp(this);
-            editStage.show();
+            //加载人员显示面板
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(MainApp.class.getResource("view/person-edit.fxml"));
+            AnchorPane anchorPane = fxmlLoader.load();
+            //根布局中间部分加入人员编辑面板
+            rootLayout.setCenter(anchorPane);
+            //获得PersonController控制器
+            PersonEditController personController = fxmlLoader.getController();
+            //向控制器传参
+            personController.setArgs(person, type);
+            personController.setMainApp(this);
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 
     public ObservableList<Person> getPersonData() {
@@ -114,4 +130,22 @@ public class MainApp extends Application {
     }
 
 
+    public void showBirthdayStatistics() {
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(MainApp.class.getResource("view/birthday-statistics.fxml"));
+            AnchorPane page = fxmlLoader.load();
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Birthday Statistics");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(primaryStage);
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+            BirthdayStatisticsController controller = fxmlLoader.getController();
+            controller.setPersonData(personData);
+            dialogStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

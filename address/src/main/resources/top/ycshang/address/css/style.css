@@ -3,6 +3,53 @@
     -fx-background-size: cover;
 }
 
+/**
+分割面板，设置水平垂直分割条透明
+ */
+.split-pane:horizontal > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+
+.split-pane:vertical > .split-pane-divider {
+    -fx-background-color: transparent;
+}
+
+/**
+表格样式
+ */
+.table-view .table-row-cell {
+    -fx-background-insets: 0;
+}
+
+.table-view .table-row-cell .table-cell {
+    -fx-border-width: 0px;
+
+}
+
+/**
+表格边框颜色
+ */
+.table-view *.column-header-background {
+    -fx-background-color: linear-gradient(to right, #b0bec5, #eceff1);
+    -fx-background-insets: 0px 0px;
+}
+
+.table-column .label {
+    -fx-background-color: linear-gradient(to right, #26a69a, #b2dfdb);
+    -fx-text-fill: #333;
+    -fx-text-alignment: center;
+    -fx-graphic-text-gap: 0;
+}
+
+.table-column {
+    -fx-padding: 0;
+}
+
+.table-view:row-selection .column-header-background .filler {
+    visibility: false;
+    -fx-background-color: #cfd8dc;
+}
+
 .container {
     -fx-background-color: #b0c6d5;
     -fx-border-radius: 20px;
@@ -15,7 +62,7 @@
 }
 
 .btn {
-    -fx-background-color: #1e6a6c;
+    -fx-background-color: linear-gradient(to right, #26a69a, #b2dfdb);
     -fx-text-fill: #f6f6f6;
     -fx-border-radius: 10px;
     -fx-background-radius: 10px;

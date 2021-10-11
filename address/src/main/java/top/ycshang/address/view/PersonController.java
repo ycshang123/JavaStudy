@@ -8,9 +8,11 @@ import javafx.scene.control.*;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import top.ycshang.address.MainApp;
+import top.ycshang.address.config.AppConstant;
 import top.ycshang.address.model.Person;
 import top.ycshang.address.utils.DateUtil;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -136,8 +138,30 @@ public class PersonController {
         }
     }
 
+
+    /**
+     * 新增人员
+     */
     public void handleNewPerson() {
-        mainApp.showNewPersonStage();
-        mainApp.getStage().setIconified(true);
+        Person tempPerson = new Person("ycshang", "软件", "女", "江苏南京", LocalDate.of(2000, 11, 28),
+                new Image("https://cdn.jsdelivr.net/gh/ycshang123/image-hosting@master/1.6cr8zznpvjc0.jpg"));
+        mainApp.showEditPerson(tempPerson, AppConstant.NEW_PERSON);
+    }
+
+    /**
+     * 编辑人员
+     */
+    public void handleEditPerson() {
+
+        Person person = personTable.getSelectionModel().getSelectedItem();
+        if (person != null) {
+            mainApp.showEditPerson(person, AppConstant.EDIT_PERSON);
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("提示");
+            alert.setHeaderText("错误操作");
+            alert.setContentText("必须选择人员才能编辑");
+            alert.showAndWait();
+        }
     }
 }

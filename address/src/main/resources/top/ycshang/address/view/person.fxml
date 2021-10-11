@@ -33,7 +33,7 @@
                     <Font size="14.0"/>
                 </font>
             </TextField>
-            <Button text="查询" AnchorPane.rightAnchor="20.0"  styleClass="btn"
+            <Button text="查询" AnchorPane.rightAnchor="20.0" styleClass="btn"
                     AnchorPane.topAnchor="20.0" onAction="#handleSearchPerson"/>
         </AnchorPane>
         <AnchorPane>
@@ -84,7 +84,7 @@
             </GridPane>
             <HBox spacing="10.0" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="20.0">
                 <Button mnemonicParsing="false" styleClass="btn" text="New" onAction="#handleNewPerson"/>
-                <Button mnemonicParsing="false" styleClass="btn" text="Edit"/>
+                <Button mnemonicParsing="false" styleClass="btn" text="Edit" onAction="#handleEditPerson"/>
                 <Button mnemonicParsing="false" styleClass="btn" text="Delete" onAction="#handleDeletePerson"/>
             </HBox>
         </AnchorPane>

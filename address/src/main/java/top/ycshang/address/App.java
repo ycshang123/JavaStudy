@@ -1,6 +1,7 @@
 package top.ycshang.address;
 
 import javafx.application.Application;
+import top.ycshang.address.config.AppConfig;
 
 /**
  * @program: address
@@ -10,6 +11,8 @@ import javafx.application.Application;
  **/
 public class App {
     public static void main(String[] args) {
+        AppConfig.init();
+
         Application.launch(MainApp.class);
     }
 }
