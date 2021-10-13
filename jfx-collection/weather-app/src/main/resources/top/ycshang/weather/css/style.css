@@ -1,0 +1,12 @@
+.bg {
+    -fx-background-color: linear-gradient(to bottom, #ffe082, #fffde7);
+}
+
+.btn {
+    -fx-background-color: #ff9800;
+    -fx-text-fill: #ffffff;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-font-size: 12px;
+    -fx-font-weight: 400;
+}
