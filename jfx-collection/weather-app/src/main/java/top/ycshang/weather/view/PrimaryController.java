@@ -34,7 +34,7 @@ public class PrimaryController {
                         todayWeather.get("max_temp") +
                         "\nMin temperature: " +
                         todayWeather.get("min_temp") +
-                        "\nWin speed: " + todayWeather.get("wind_speed")
+                        "\nWind speed: " + todayWeather.get("wind_speed")
         );
     }
 
