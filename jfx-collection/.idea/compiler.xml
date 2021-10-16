@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="java-jfx" />
-        <module name="weather-app" />
+        <module name="linechar" />
         <module name="address" />
+        <module name="weather-app" />
       </profile>
     </annotationProcessing>
   </component>
