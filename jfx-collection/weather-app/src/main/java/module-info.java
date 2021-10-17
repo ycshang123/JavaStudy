@@ -6,6 +6,9 @@ module top.ycshang.weather.weatherapp {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.ikonli.materialdesign;
 
+    requires com.github.oshi;
+    requires fastjson;
+
 
     opens top.ycshang.weather to javafx.fxml;
     exports top.ycshang.weather;
