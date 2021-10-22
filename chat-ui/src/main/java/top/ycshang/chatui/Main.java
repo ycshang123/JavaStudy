@@ -1,10 +1,11 @@
 package top.ycshang.chatui;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.stage.StageStyle;
+import top.ycshang.chatui.view.chat.ChatController;
+import top.ycshang.chatui.view.chat.IChatMethod;
+
+import java.io.IOException;
 
 /**
  * @program: chat-ui
@@ -13,17 +14,23 @@ import javafx.stage.StageStyle;
  * @create: 2021-10-21 22:30
  **/
 public class Main extends Application {
+
     public static void main(String[] args) {
-        launch();
+        launch(args);
     }
 
+    //@Override
+    //public void start(Stage stage) throws IOException {
+    //    ILoginMethod login = new LoginController((userId, userPassword) -> {
+    //        System.out.println("登录 userId：" + userId + "userPassword：" + userPassword);
+    //    });
+    //
+    //    login.doShow();
+    //}
     @Override
-    public void start(Stage stage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("login/login.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 540, 420);
-        stage.setTitle("Login");
-        stage.setScene(scene);
-        stage.initStyle(StageStyle.TRANSPARENT);
-        stage.show();
+    public void start(Stage stage) throws IOException {
+        IChatMethod chat = new ChatController();
+        chat.doShow();
     }
+
 }

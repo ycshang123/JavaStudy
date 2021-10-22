@@ -49,7 +49,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>top.ycshang.chatui/top.ycshang.chatui.HelloApplication</mainClass>
+                            <mainClass>top.ycshang.chatui/top.ycshang.chatui.Main</mainClass>
                         </configuration>
                     </execution>
                 </executions>
