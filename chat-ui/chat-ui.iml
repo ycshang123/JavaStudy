@@ -18,5 +18,8 @@
     <orderEntry type="library" name="Maven: org.openjfx:javafx-base:win:14.0.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:14.0.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-fxml:win:14.0.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-javafx:12.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-core:12.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.kordamp.ikonli:ikonli-materialdesign-pack:12.2.0" level="project" />
   </component>
 </module>

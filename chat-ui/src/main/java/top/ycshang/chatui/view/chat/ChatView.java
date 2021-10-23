@@ -1,12 +1,15 @@
 package top.ycshang.chatui.view.chat;
 
+import top.ycshang.chatui.view.chat.ChatInit;
+import top.ycshang.chatui.view.chat.IChatEvent;
+
 /**
- * @program: chat-ui
- * @description:
- * @author: ycshang
- * @create: 2021-10-22 22:20
- **/
+ * 窗体的展示
+ *
+ * @author ycshang
+ */
 public class ChatView {
+
     private ChatInit chatInit;
     private IChatEvent chatEvent;
 
