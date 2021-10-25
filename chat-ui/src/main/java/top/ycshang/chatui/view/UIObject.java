@@ -2,7 +2,6 @@ package top.ycshang.chatui.view;
 
 import javafx.scene.Cursor;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 /**
@@ -39,6 +38,22 @@ public abstract class UIObject extends Stage {
         });
     }
 
+    public double x() {
+        return getX();
+    }
+
+    public double y() {
+        return getY();
+    }
+
+    public double width() {
+        return getWidth();
+    }
+
+    public double height() {
+        return getHeight();
+    }
+
     /**
      * 初始化页面：抽象方法
      */
@@ -48,5 +63,6 @@ public abstract class UIObject extends Stage {
      * 初始化事件定义：抽象方法
      */
     public abstract void initEventDefine();
+
 
 }

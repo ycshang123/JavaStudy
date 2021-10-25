@@ -3,8 +3,8 @@ package top.ycshang.chatui.view.chat;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.TextArea;
-import javafx.scene.image.Image;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import top.ycshang.chatui.Main;
 import top.ycshang.chatui.view.UIObject;
@@ -50,6 +50,7 @@ public abstract class ChatInit extends UIObject {
         Scene scene = new Scene(root, 1243, 820);
         scene.setFill(Color.TRANSPARENT);
         setScene(scene);
+        ((Stage) scene.getWindow()).setAlwaysOnTop(true);
         initStyle(StageStyle.TRANSPARENT);
         setResizable(false);
         //this.getIcons().add(new Image(Objects.requireNonNull(Main.class.getResourceAsStream("view/chat/img/head/logo.png"))));

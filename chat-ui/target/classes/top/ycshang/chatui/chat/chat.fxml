@@ -43,7 +43,7 @@
         </Button>
 
         <!-- 设置 -->
-        <Button id="barSet" layoutX="15.0" layoutY="1140.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="20"
+        <Button id="barSet" layoutX="15.0" layoutY="760.0" mnemonicParsing="false" prefHeight="0.0" prefWidth="20"
                 styleClass="bar">
             <graphic>
                 <StackedFontIcon iconSize="32">

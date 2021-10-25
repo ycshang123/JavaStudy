@@ -78,4 +78,18 @@ public interface IChatMethod {
      * @param isRemind 是否提醒
      */
     void addTalkMsgRight(String talkId, String msg, Date msgData, Boolean idxFirst, Boolean selected, Boolean isRemind);
+
+    /**
+     * 工具栏表情框体位置：X
+     *
+     * @return X
+     */
+    double getToolFaceX();
+
+    /**
+     * 工具栏表情框体位置：Y
+     *
+     * @return Y
+     */
+    double getToolFaceY();
 }

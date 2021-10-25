@@ -196,4 +196,13 @@ public class ChatController extends ChatInit implements IChatMethod {
         // 设置位置&选中
         chatView.updateTalkListIdxAndSelected(0, talkElement.pane(), talkElement.msgRemind(), idxFirst, selected, isRemind);
     }
+    @Override
+    public double getToolFaceX() {
+        return x() + width() - 960;
+    }
+
+    @Override
+    public double getToolFaceY() {
+        return y() + height() - 180;
+    }
 }

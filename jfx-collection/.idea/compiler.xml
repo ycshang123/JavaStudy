@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="java-jfx" />
         <module name="notepad" />
+        <module name="trayicon" />
         <module name="linechar" />
         <module name="address" />
         <module name="weather-app" />

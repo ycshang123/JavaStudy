@@ -4,6 +4,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import top.ycshang.chatui.view.chat.data.TalkBoxData;
+import top.ycshang.chatui.view.face.FaceController;
 
 import java.util.Date;
 
@@ -33,6 +34,7 @@ public class ChatEventDefine {
         this.barSet();
         doEventTextSend();   // 发送消息事件[键盘]
         doEventTouchSend();  // 发送消息事件[按钮]
+        doEventToolFace();
     }
 
     /**
@@ -229,7 +231,7 @@ public class ChatEventDefine {
         Pane selectedItem = (Pane) selectionModel.getSelectedItem();
         // 对话信息
         TalkBoxData talkBoxData = (TalkBoxData) selectedItem.getUserData();
-        String msg = txt_input.getText();
+        String msg = txt_input.getText().trim();
         if (null == msg || "".equals(msg) || "".equals(msg.trim())) {
             return;
         }
@@ -239,5 +241,13 @@ public class ChatEventDefine {
         // 发送事件给自己添加消息
         chatMethod.addTalkMsgRight(talkBoxData.getTalkId(), msg, msgDate, true, true, false);
         txt_input.clear();
+    }
+
+    private void doEventToolFace() {
+        FaceController face = new FaceController(chatInit, chatInit, chatEvent, chatMethod);
+        Button tool_face = chatInit.$("tool_face", Button.class);
+        tool_face.setOnMousePressed(event -> {
+            face.doShowFace(chatMethod.getToolFaceX(), chatMethod.getToolFaceY());
+        });
     }
 }
