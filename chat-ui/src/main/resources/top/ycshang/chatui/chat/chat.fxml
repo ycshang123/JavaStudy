@@ -2,8 +2,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import org.kordamp.ikonli.javafx.FontIcon?>
-<?import org.kordamp.ikonli.javafx.StackedFontIcon?>
+<?import org.kordamp.ikonli.javafx.*?>
 <Pane id="chat" prefHeight="780.0" prefWidth="1240.0"
       stylesheets="@css/chat.css" xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml">
@@ -102,9 +101,26 @@
 
     </Pane>
 
-    <!-- groupBarFriend -->
-    <Pane id="groupBarFriend" layoutX="76" layoutY="1" prefHeight="818" prefWidth="1166" styleClass="groupBarFriend"
-          visible="false">
+    <Pane visible="false" id="groupBarFriend" layoutX="76" layoutY="1" prefWidth="1166" prefHeight="818">
+        <!-- 操作栏；最小化、关闭 -->
+        <Pane id="operation" layoutX="314" prefWidth="852" prefHeight="32">
+            <Button id="group_bar_friend_min" styleClass="min" layoutX="767" prefWidth="42" prefHeight="32"/>
+            <Button id="group_bar_friend_close" styleClass="close" layoutX="810" prefWidth="42" prefHeight="32"/>
+        </Pane>
+        <!-- 搜索栏 -->
+        <Pane styleClass="search" prefHeight="80" prefWidth="314">
+            <TextField styleClass="searchInput" layoutX="20" layoutY="30" prefHeight="30" prefWidth="240"
+                       promptText="搜索">
+                <padding>
+                    <Insets left="30"/>
+                </padding>
+            </TextField>
+            <Label styleClass="searchAdd" layoutX="270" layoutY="30" prefHeight="30" prefWidth="30"/>
+        </Pane>
+        <!-- 好友栏 -->
+        <Pane id="friend" layoutY="80" prefHeight="738" prefWidth="314">
+            <ListView id="friendList" prefHeight="738" prefWidth="314" styleClass="friendListStyle"/>
+        </Pane>
     </Pane>
 
     <!-- groupBarLocation -->
@@ -116,5 +132,7 @@
     <Pane id="groupBarSet" layoutX="76" layoutY="1" prefHeight="818" prefWidth="1166" styleClass="groupBarSet"
           visible="false">
     </Pane>
+
+
 
 </Pane>

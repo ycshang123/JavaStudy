@@ -2,7 +2,7 @@ package top.ycshang.chatui.util;
 
 
 
-import top.ycshang.chatui.view.chat.element.group_bar_chat.ElementTalk;
+import top.ycshang.chatui.view.chat.group_bar_chat.ElementTalk;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

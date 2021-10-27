@@ -9,8 +9,6 @@ import java.util.Date;
  * @create: 2021-10-22 22:20
  **/
 public interface IChatMethod {
-
-
     /**
      * 打开窗口
      */
@@ -92,4 +90,22 @@ public interface IChatMethod {
      * @return Y
      */
     double getToolFaceY();
+    /**
+     * 好友列表添加群组
+     *
+     * @param groupId   群组ID
+     * @param groupName 群组名称
+     * @param groupHead 群组头像
+     */
+    void addFriendGroup(String groupId, String groupName, String groupHead);
+
+    /**
+     * 好友列表添加用户
+     *
+     * @param selected     选中;true/false
+     * @param userId       好友ID
+     * @param userNickName 好友昵称
+     * @param userHead     好友头像
+     */
+    void addFriendUser(boolean selected, String userId, String userNickName, String userHead);
 }

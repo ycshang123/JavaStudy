@@ -1,4 +1,4 @@
-package top.ycshang.chatui.view.chat.element.group_bar_chat;
+package top.ycshang.chatui.view.chat.group_bar_chat;
 
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
