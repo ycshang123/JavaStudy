@@ -27,7 +27,6 @@ public class TcpServer {
             EventLoopGroup workerGroup = new NioEventLoopGroup(1);
             bootstrap.group(bossGroup, workerGroup).channel(NioServerSocketChannel.class)
                     .childHandler(new ChannelInitializer<SocketChannel>() {
-
                         @Override
                         protected void initChannel(SocketChannel arg0) {
                             //注册解码器,将 ByteBuffer 转换为 byte 数组

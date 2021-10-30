@@ -2,7 +2,7 @@ package top.ycshang.netty.demo;
 
 /**
  * 字节转换工具类
- * @author mqxu
+ * @author ycshang
  */
 public class BytesUtils {
 

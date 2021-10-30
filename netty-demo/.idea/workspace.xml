@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="722b9067-52e8-4627-a119-01f938095120" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/src/main/java/top/ycshang/trayicon/HtmlEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jfx-collection/weather-app/src/main/java/top/ycshang/weather/HtmlEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/trayicon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/trayicon/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/trayicon/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/top/ycshang/weather/util/SystemInfoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/top/ycshang/weather/util/SystemInfoUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/ByteArrayHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/ByteArrayHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/BytesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/BytesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/TcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/TcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/demo/TcpServer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="20DwFh5QxrpDgyhp6OGPnbrnVWd" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="722b9067-52e8-4627-a119-01f938095120" name="Changes" comment="" />
+      <created>1635592366969</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635592366969</updated>
+      <workItem from="1635592373325" duration="148000" />
+      <workItem from="1635592539519" duration="130000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

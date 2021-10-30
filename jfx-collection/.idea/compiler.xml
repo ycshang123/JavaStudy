@@ -14,5 +14,6 @@
         <module name="weather-app" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel target="14" />
   </component>
 </project>

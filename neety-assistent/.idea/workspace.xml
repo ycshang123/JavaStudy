@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9afff999-ba60-4482-9b8a-69c0a22e8524" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/src/main/java/top/ycshang/trayicon/HtmlEditor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jfx-collection/weather-app/src/main/java/top/ycshang/weather/HtmlEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/assistant/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/assistant/client/NettyClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/assistant/client/NettyClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/assistant/util/PropertyUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/top/ycshang/netty/assistant/view/Workspace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/ChannelAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/ChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/ChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/client/AioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/client/AioClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/server/AioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/server/AioServerChannelInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/aio/server/AioServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/bio/ChannelAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/bio/ChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/bio/client/BioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/bio/client/BioClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/bio/server/BioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/bio/server/BioServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/nio/ChannelAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/nio/ChannelHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/nio/client/NioClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/nio/client/NioClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/nio/server/NioServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../netty-demo-1-00/src/main/java/top/ycshang/netty/demo/nio/server/NioServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/trayicon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/trayicon/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/trayicon/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/trayicon/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/top/ycshang/weather/util/SystemInfoUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/../jfx-collection/weather-app/target/classes/top/ycshang/weather/util/SystemInfoUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty-demo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty-demo/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-demo/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty-demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/ByteArrayHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/ByteArrayHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/BytesUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/BytesUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/TcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/TcpClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/TcpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../netty-demo/src/main/java/top/ycshang/netty/demo/TcpServer.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../tools/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\tools\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="20ER8XuJcS2i9G1qQGwIR4sPgS2" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev\JavaStudy\neety-assistent" />
+      <recent name="D:\dev\JavaStudy\neety-assistent\src\main\java\top\ycshang\netty\assistant\view" />
+      <recent name="D:\dev\JavaStudy\neety-assistent\src\main\java\top\ycshang\netty\assistant\util" />
+      <recent name="D:\dev\JavaStudy\neety-assistent\src\main\java\top\ycshang\netty\assistant\client" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Workspace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="top.ycshang.netty.assistant.view.Workspace" />
+      <module name="neety-assistent" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="top.ycshang.netty.assistant.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Workspace" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9afff999-ba60-4482-9b8a-69c0a22e8524" name="Changes" comment="" />
+      <created>1635607603531</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1635607603531</updated>
+      <workItem from="1635607605318" duration="384000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
