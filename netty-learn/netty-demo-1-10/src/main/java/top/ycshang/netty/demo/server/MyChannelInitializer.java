@@ -6,7 +6,6 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioDatagramChannel;
 import io.netty.handler.codec.string.StringDecoder;
-import top.ycshang.netty.demo.client.MyClientHandler;
 
 import java.nio.charset.StandardCharsets;
 

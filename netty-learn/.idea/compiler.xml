@@ -2,17 +2,20 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="netty-demo-1-00" />
         <module name="netty-demo-1-11" />
+        <module name="netty-demo-2-02" />
         <module name="netty-demo-1-10" />
         <module name="netty-demo-1-04" />
         <module name="netty-demo-1-03" />
         <module name="netty-demo-1-02" />
         <module name="netty-demo-1-01" />
+        <module name="netty-demo-2-01" />
         <module name="netty-assistent" />
         <module name="netty-demo-1-08" />
         <module name="netty-demo-1-07" />
@@ -21,5 +24,8 @@
         <module name="netty-demo-1-09" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="netty-demo2-02" target="14" />
+    </bytecodeTargetLevel>
   </component>
 </project>
