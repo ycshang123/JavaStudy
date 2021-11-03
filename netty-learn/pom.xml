@@ -24,11 +24,13 @@
         <module>netty-demo-1-11</module>
         <module>netty-demo-2-01</module>
         <module>netty-demo-2-02</module>
+        <module>netty-demo-2-03</module>
+        <module>netty-demo-2-04</module>
     </modules>
 
     <properties>
-        <maven.compiler.source>14</maven.compiler.source>
-        <maven.compiler.target>14</maven.compiler.target>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
     <dependencies>
         <dependency>
