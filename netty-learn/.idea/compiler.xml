@@ -22,6 +22,7 @@
         <module name="netty-demo-1-07" />
         <module name="netty-demo-1-06" />
         <module name="netty-demo-1-05" />
+        <module name="netty-demo-websocket" />
         <module name="netty-demo-1-09" />
       </profile>
     </annotationProcessing>
