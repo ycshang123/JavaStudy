@@ -1,0 +1,1 @@
+package top.ycshang.chat.client.domain;
