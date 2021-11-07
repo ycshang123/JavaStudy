@@ -14,23 +14,4 @@ public class LoginView {
         this.loginInit = loginInit;
         this.loginEvent = loginEvent;
     }
-
-    public LoginView() {
-    }
-
-    public LoginInit getLoginInit() {
-        return loginInit;
-    }
-
-    public void setLoginInit(LoginInit loginInit) {
-        this.loginInit = loginInit;
-    }
-
-    public ILoginEvent getLoginEvent() {
-        return loginEvent;
-    }
-
-    public void setLoginEvent(ILoginEvent loginEvent) {
-        this.loginEvent = loginEvent;
-    }
 }

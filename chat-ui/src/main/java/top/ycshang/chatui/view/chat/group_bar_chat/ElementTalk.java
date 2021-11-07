@@ -6,6 +6,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.layout.Pane;
+import top.ycshang.chatui.param.AppConst;
 import top.ycshang.chatui.util.DateUtil;
 import top.ycshang.chatui.util.Ids;
 import top.ycshang.chatui.view.chat.data.RemindCount;
@@ -26,6 +27,14 @@ public class ElementTalk {
      */
     private final Pane pane;
     /**
+     * 头像
+     */
+    private Label head;
+    /**
+     * 昵称
+     */
+    private Label nikeName;
+    /**
      * 信息简述
      */
     private final Label msgSketch;
@@ -37,22 +46,16 @@ public class ElementTalk {
      * 删除对话框按钮
      */
     private final Button delete;
+
     /**
      * 消息提醒
      */
     private final Label msgRemind;
+
     /**
      * 初始化填充消息对话框
      */
     private final ListView<Pane> infoBoxList;
-    /**
-     * 头像
-     */
-    private Label head;
-    /**
-     * 昵称
-     */
-    private Label nikeName;
 
     public ElementTalk(String talkId, Integer talkType, String talkName, String talkHead, String talkSketch, Date talkDate) {
         pane = new Pane();
@@ -142,8 +145,8 @@ public class ElementTalk {
 
     public void fillMsgSketch(String talkSketch, Date talkDate) {
         if (null != talkSketch) {
-            if (talkSketch.length() > 30) {
-                talkSketch = talkSketch.substring(0, 30);
+            if (talkSketch.length() > AppConst.TALK_SKETCH_LENGTH) {
+                talkSketch = talkSketch.substring(0, AppConst.TALK_SKETCH_LENGTH);
             }
             msgSketch.setText(talkSketch);
         }

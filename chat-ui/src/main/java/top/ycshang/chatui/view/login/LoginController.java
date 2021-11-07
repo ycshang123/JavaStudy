@@ -1,6 +1,7 @@
 package top.ycshang.chatui.view.login;
 
 import javafx.scene.control.Alert;
+import top.ycshang.chatui.view.chat.IChatMethod;
 
 /**
  * @program: chat-ui
@@ -9,24 +10,23 @@ import javafx.scene.control.Alert;
  * @create: 2021-10-22 21:04
  **/
 public class LoginController extends LoginInit implements ILoginMethod {
-    public LoginController(ILoginEvent loginEvent) {
-        super(loginEvent);
-    }
+    private IChatMethod chat;
+    private LoginView loginView;
+    private LoginEventDefine loginEventDefine;
 
-    @Override
-    public void move() {
-        super.move();
+    public LoginController(ILoginEvent loginEvent, IChatMethod chat) {
+        super(loginEvent);
+        this.chat = chat;
     }
 
     @Override
     public void initView() {
-        LoginView loginView = new LoginView(this, loginEvent);
+        loginView = new LoginView(this, loginEvent);
     }
 
     @Override
     public void initEventDefine() {
-        LoginEventDefine loginEventDefine = new LoginEventDefine(this, loginEvent, this);
-
+        loginEventDefine = new LoginEventDefine(this, loginEvent, this);
     }
 
     @Override
@@ -36,20 +36,14 @@ public class LoginController extends LoginInit implements ILoginMethod {
 
     @Override
     public void doLoginError() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.titleProperty().set("提示");
-        alert.headerTextProperty().set("登录失败！");
-        alert.showAndWait();
-
+        // TODO 登陆失败提示
     }
 
     @Override
     public void doLoginSuccess() {
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.titleProperty().set("提示");
-        alert.headerTextProperty().set("登录成功");
-        alert.showAndWait();
+        // 关闭原窗口
         close();
-
+        // 打开聊天窗口
+        chat.doShow();
     }
 }

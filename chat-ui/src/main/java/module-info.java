@@ -7,6 +7,7 @@ module top.ycshang.chatui {
 
     opens top.ycshang.chatui to javafx.fxml;
     exports top.ycshang.chatui;
+
     opens top.ycshang.chatui.view to javafx.fxml;
     exports top.ycshang.chatui.view;
 
@@ -15,6 +16,9 @@ module top.ycshang.chatui {
 
     opens top.ycshang.chatui.view.chat to javafx.fxml;
     exports top.ycshang.chatui.view.chat;
+
+    exports top.ycshang.chatui.util;
+    exports top.ycshang.chatui.param;
 
 
 }
