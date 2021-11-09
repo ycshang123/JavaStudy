@@ -1,0 +1,2 @@
+className=top.ycshang.java.basic.reflection.Person
+methodName=getPerson
