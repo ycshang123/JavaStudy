@@ -5,13 +5,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/**
- * 自定义注解
- * @author ycshang
- */
-@Target(ElementType.FIELD)
+@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MyField {
-    String description();
-    int length();
+public @interface Persons {
+    Person[] value();
 }
