@@ -164,7 +164,7 @@ public class IoDemo {
      */
     public static void bufferWriterDemo() throws IOException {
         // 创建流对象
-        BufferedWriter bw = new BufferedWriter(new FileWriter("out.txt"));
+        BufferedWriter bw = new BufferedWriter(new FileWriter("test.txt"));
         // 写出数据
         bw.write("Java");
         // 写出换⾏
@@ -204,7 +204,7 @@ public class IoDemo {
         BufferedReader bufferedReader = new BufferedReader(new FileReader("in.txt"));
         //    创建BufferWriter对象,构造方法传递FileWriter对象
         Writer out;
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("out.txt"));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("test.txt"));
         //    使用BufferedReader对象中的方法readLine,以行的方式读取文本
         String line = null;
         while ((line = bufferedReader.readLine()) != null) {
